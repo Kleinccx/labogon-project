@@ -1,0 +1,824 @@
+/** Rem and em do NOT depend on html font-size in media queires! Instead, 1rem = 1em = 16px*/
+
+/*Small Laptop */
+
+@media (max-width: 1440px) {
+  .testimonial-container {
+    padding: 6.4rem;
+  }
+
+  .meals {
+    height: auto;
+    padding: 6.4rem auto;
+    margin-bottom: 4.8rem;
+  }
+
+  .meal {
+    width: auto;
+    height: 75vh;
+  }
+}
+
+@media (max-width: 1200px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer {
+    padding: 6.4rem 6.4rem 1.2rem 6.4rem;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1100px) {
+  /*****NAV-BAR*******/
+  .header {
+    height: 8rem;
+    padding: 0 3.2rem;
+    color: #f28c28;
+  }
+
+  .logo-img {
+    width: 7.5rem;
+    height: 7.5rem;
+  }
+
+  .main-nav-list {
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+  } /**END NAV BAR **/
+
+  /*****HERO SECTION********/
+
+  .primary-heading {
+    font-size: 4.4rem;
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  .description {
+    font-size: 1.8rem;
+    line-height: 1.1;
+    margin-bottom: 1.2rem;
+  }
+
+  .section-hero {
+    height: 50vh;
+  }
+  /*****END HERO SECTION******/
+
+  /*****FEATURED IN SECTION******/
+
+  .featured {
+    margin: 4.8rem 0 2.4rem 0;
+    height: 20vh;
+  }
+
+  .featured-in-img {
+    gap: 3rem;
+    width: 75%;
+  }
+  /*****END FEATURED IN SECTION******/
+
+  /*******DIET SECTION********/
+
+  .diets {
+    background-color: #fdf2e9;
+    padding: 8rem auto;
+  }
+
+  .diets h1 {
+    font-size: 4.4rem;
+    padding: 4.8rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .diet-text h2 {
+    font-size: 4rem;
+  }
+
+  .diet-text .heading {
+    font-size: 2rem;
+    line-height: 1;
+  }
+
+  .dietplan {
+    padding: 4.2rem;
+  }
+
+  .description--2 {
+    font-size: 1.8rem;
+    line-height: 1.1;
+    margin-bottom: 1.4rem;
+  }
+
+  .diet-img {
+    width: 40rem;
+  }
+
+  .diet-img::before {
+    width: 60%;
+    padding-bottom: 60%;
+  }
+
+  .diet-img img {
+    width: 55%;
+    border-radius: 1rem;
+  }
+
+  /*******END DIET SECTION********/
+
+  /***********MEALS SECTION********/
+
+  .meals {
+    height: auto;
+    padding: 4.8rem auto;
+  }
+
+  .meal {
+    width: auto;
+    height: 75vh;
+  }
+
+  .meal img {
+    width: 100%;
+    height: 50%;
+  }
+
+  .meals h2 {
+    font-size: 2rem;
+    line-height: 1;
+  }
+
+  .attribute-list li {
+    font-size: 1.8rem;
+    line-height: 1.1;
+  }
+
+  /*******END MEALS SECTION*******/
+
+  /*******LOCATION/CONTACT SETION******/
+
+  .location-contact h2 {
+    font-size: 2rem;
+  }
+
+  /*******END LOCATION/CONTACT SETION******/
+
+  /*******SET BOOKING********/
+
+  .reservations h1 {
+    font-size: 4.8rem;
+  }
+
+  .reservations h2 {
+    font-size: 2.4rem;
+  }
+
+  .reservation h3 {
+    font-size: 2rem;
+  }
+
+  /*******END OF SET BOOKING********/
+
+  /********TESTIMONIALS*********/
+  /*Gallery*/
+  .gallery-item {
+    width: 20rem;
+    height: 20rem;
+  }
+  /**FOOTER**/
+  .footer {
+    padding: 2rem 3.2rem 1.2rem 3.2rem;
+    margin: 0 auto;
+  }
+
+  .flex--footer {
+    gap: 2rem;
+  }
+
+  .footer-list li {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+    line-height: 1;
+  }
+
+  .socialmedia--icon .icon {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .logo-img-footer {
+    width: 7.5rem;
+    height: 7.5rem;
+    margin-bottom: 1.6rem;
+  }
+  /**END FOOTER */
+}
+
+/******Mobile Tablet*******/
+
+@media (max-width: 900px) {
+  /**In General */
+  .primary-heading {
+    font-size: 3.6rem;
+  }
+
+  .btn {
+    font-size: 1.6rem;
+    border-radius: 18rem;
+    text-align: center;
+    padding: 1rem 2.4rem;
+  }
+
+  .attribute-list {
+    margin-bottom: 2rem;
+  }
+
+  .attribute-list li {
+    font-size: 1.4rem;
+    line-height: 1.1;
+    color: #333;
+
+    margin-bottom: 1.6rem;
+    padding-left: 1.6rem;
+  }
+  .grid--3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .meal-list {
+    grid-column: 1/-1;
+    justify-self: center;
+  }
+  /*End General*/
+
+  /*MOBILE NAVIGATION*/
+
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+
+  .main-nav {
+    background-color: rgb(255, 255, 255, 0.97);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    /*HIDE NAVIGATION*/
+    opacity: 0;
+
+    /*Make it unaccessible with mouse/keyboard*/
+    pointer-events: none;
+    /*Make it hide from readers*/
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+  }
+
+  /*END MOBILE NAVIGATION*/
+
+  /*****NAV-BAR*******/
+  .header {
+    height: 7.5rem;
+    padding: 0 3.2rem;
+    color: #f28c28;
+  }
+
+  .logo-img {
+    width: 7rem;
+    height: 7rem;
+  }
+
+  /**END NAV BAR **/
+
+  /*****HERO SECTION********/
+
+  .description {
+    font-size: 1.6rem;
+    line-height: 1;
+  }
+
+  .section-hero {
+    height: 45vh;
+  }
+  /*****END HERO SECTION******/
+
+  /*****FEATURED IN SECTION******/
+
+  .featured {
+    margin: 4.2rem 0 1.6rem 0;
+    height: 20vh;
+  }
+
+  .featured-in-text {
+    font-size: 1.8rem;
+    line-height: 1.2;
+  }
+
+  .featured-in-img {
+    gap: 2.4rem;
+    width: 85%;
+  }
+  /*****END FEATURED IN SECTION******/
+
+  /*******DIET SECTION********/
+
+  .diets {
+    background-color: #fdf2e9;
+    padding: 6.4rem auto;
+    margin: 1.2rem auto 3.2rem auto;
+  }
+
+  .grid--2 {
+    padding: 3.4rem;
+  }
+
+  .diets h1 {
+    font-size: 4rem;
+    padding: 3.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .diet-text h2 {
+    font-size: 3.2rem;
+  }
+
+  .diet-text .heading {
+    font-size: 1.8rem;
+    line-height: 1;
+  }
+
+  .description--2 {
+    font-size: 1.6rem;
+    line-height: 1;
+    margin-bottom: 1.2rem;
+  }
+
+  /*******END DIET SECTION********/
+
+  /***********MEALS SECTION********/
+
+  .meals h1 {
+    font-size: 3.6rem;
+  }
+
+  .meals {
+    height: auto;
+    padding: 3.2rem auto;
+  }
+
+  .meal {
+    width: auto;
+    height: 70vh;
+  }
+
+  .meal img {
+    width: 100%;
+    height: 50%;
+  }
+
+  .meals h2 {
+    font-size: 1.8rem;
+  }
+
+  .attribute-list li {
+    font-size: 1.6rem;
+  }
+
+  /*******END MEALS SECTION*******/
+
+  /*******LOCATION/CONTACT SETION******/
+
+  .location-contact {
+    padding: 4.8rem 8rem;
+  }
+
+  .location-wrap {
+    grid-template-columns: 1fr;
+    gap: 6.4rem;
+  }
+
+  iframe {
+    width: 100%;
+  }
+
+  .location-contact h2 {
+    font-size: 2rem;
+  }
+
+  /*******END LOCATION/CONTACT SETION******/
+
+  /*******SET BOOKING********/
+  .plan-3rd {
+    grid-column: 1/-1;
+    justify-self: center;
+  }
+  .reservation {
+    padding: 4.8rem 8rem;
+    margin-bottom: 6.4rem;
+  }
+
+  .reservations h1 {
+    font-size: 4rem;
+  }
+
+  .reservations h2 {
+    font-size: 2rem;
+  }
+
+  .reservation h3 {
+    font-size: 1.8rem;
+  }
+
+  /*******END OF SET BOOKING********/
+
+  /********TESTIMONIALS*********/
+
+  .section-testimonials {
+    grid-template-columns: 1fr;
+    margin-bottom: 4.8rem;
+  }
+
+  .testimonial-container {
+    padding: 8rem;
+  }
+
+  .testimonial-container h2 {
+    font-size: 2rem;
+    line-height: 1;
+    margin-bottom: 1.4rem;
+  }
+
+  .testimonial-container h1 {
+    font-size: 4rem;
+    margin-bottom: 2.4rem;
+    padding-bottom: 2rem;
+  }
+
+  .testimonial-text {
+    font-size: 1.6rem;
+    line-height: 1.2;
+    margin-bottom: 1.4rem;
+  }
+
+  /*Gallery*/
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .gallery-item {
+    width: auto;
+  }
+
+  /**END TESTIMNONIAL**/
+
+  /*Footer*/
+  .footer {
+    padding: 2rem 2rem 1.2rem 2rem;
+    margin: 0 auto;
+  }
+
+  .flex--footer {
+    gap: 1.8rem;
+  }
+
+  .footer-list li {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+    line-height: 1;
+  }
+
+  .socialmedia--icon .icon {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .logo-img-footer {
+    width: 7rem;
+    height: 7rem;
+    margin-bottom: 1.6rem;
+  }
+
+  .footer-list li {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 1.2rem;
+    line-height: 1;
+  }
+
+  .copyright {
+    font-size: 1.2rem;
+    margin-bottom: 1.2rem;
+  }
+
+  /*END FOOTER*/
+}
+
+/**SMALLER Tablet**/
+
+@media (max-width: 760px) {
+  /**In General*/
+  .primary-heading {
+    font-size: 3rem;
+  }
+
+  .description {
+    font-size: 1.4rem;
+    line-height: 1;
+    margin-bottom: 1.2rem;
+  }
+
+  .btn {
+    font-size: 1.4rem;
+    border-radius: 12rem;
+    text-align: center;
+    padding: 1rem 1.8rem;
+  }
+
+  /**FOOTER***/
+  .footer {
+    padding: 2rem 2rem 1.2rem 2rem;
+  }
+
+  .flex--footer {
+    gap: 1.4rem;
+  }
+
+  .footer-list li {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+
+  .socialmedia--icon .icon {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .logo-img-footer {
+    width: 6.5rem;
+    height: 6.5rem;
+  }
+
+  .footer-list li {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 650px) {
+  /**In General*/
+  .primary-heading {
+    font-size: 2.6rem;
+  }
+
+  .description {
+    font-size: 1.2rem;
+    line-height: 1;
+    margin-bottom: 1.2rem;
+  }
+
+  .grid--2,
+  .grid--3 {
+    grid-template-columns: 1fr;
+  }
+  /*****NAV-BAR*******/
+  .header {
+    height: 7rem;
+    padding: 0 3.2rem;
+    color: #f28c28;
+  }
+
+  .logo-img {
+    width: 6.5rem;
+    height: 6.5rem;
+  }
+
+  /*******DIET SECTION********/
+
+  .diet-img-box:nth-child(2) {
+    grid-row: 1;
+  }
+
+  .diet-img-box:nth-child(6) {
+    grid-row: 5;
+  }
+
+  /*END DIET SECTION**/
+
+  /***TESTIMONIAL**/
+
+  .testimonial-container h2 {
+    font-size: 2rem;
+  }
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  /***END TESTIMONIAL****/
+
+  /****MEALS SECTION****/
+
+  /**FOOTER***/
+  .flex--footer {
+    display: grid;
+  }
+}
+
+@media (max-width: 630px) {
+  /**FOOTER***/
+
+  .upper--footer {
+    display: flex;
+    flex-direction: column;
+    gap: 2.8rem;
+  }
+  .flex--footer {
+    display: flex;
+  }
+}
+
+@media (max-width: 460px) {
+  /**In General*/
+  .primary-heading {
+    font-size: 2rem;
+  }
+
+  /*****HERO SECTION********/
+  .hero-text-box {
+    text-align: center;
+  }
+
+  .section-hero {
+    height: 55vh;
+  }
+
+  /***FEATURED IN****/
+
+  .featured {
+    margin: 3.4rem 0 0 0;
+    height: 20vh;
+  }
+
+  .featured-in-img {
+    gap: 1.2rem;
+    width: 95%;
+  }
+
+  .featured-in-img img {
+    width: 100%;
+    height: 100%;
+  }
+
+  /****DIET SECTION**/
+
+  .diets {
+    margin: 0 auto 3.2rem auto;
+  }
+
+  .diets h1 {
+    font-size: 2rem;
+    padding: 3rem;
+  }
+
+  .diet-img {
+    width: auto;
+  }
+
+  .diet-text h2 {
+    font-size: 2rem;
+  }
+
+  /*END DIET SECTION**/
+
+  /***MEALS SECTION***/
+
+  .meals h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1.8rem;
+  }
+
+  .meal {
+    padding-bottom: 2rem;
+    margin-bottom: 1.8rem;
+  }
+
+  .meal {
+    width: auto;
+    height: 70vh;
+  }
+
+  /***LOCATION***/
+
+  .location-contact {
+    padding: 4rem 3rem;
+  }
+
+  .location-contact h3 {
+    font-size: 2rem;
+  }
+
+  .location-wrap {
+    gap: 4.8rem;
+  }
+
+  form input,
+  form textarea {
+    padding: 1.2rem;
+    margin: 1.2rem 0;
+    font-size: 1.4rem;
+    border-radius: 4px;
+  }
+
+  /*******SET BOOKING********/
+
+  .reservations h1 {
+    font-size: 2rem;
+  }
+
+  .reservation {
+    padding: 4.8rem 4rem;
+    margin-bottom: 4rem;
+  }
+
+  /***TESTIMONIAL**/
+
+  .testimonial-container h2 {
+    font-size: 2.4rem;
+  }
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial-container {
+    padding: 4rem;
+  }
+
+  .testimonial-container h2 {
+    font-size: 2rem;
+  }
+
+  .testimonial-container h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1.8rem;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  /***END TESTIMONIAL****/
+
+  /**FOOTER***/
+
+  .upper--footer {
+    display: flex;
+    flex-direction: column;
+    gap: 2.8rem;
+  }
+  .flex--footer {
+    display: flex;
+  }
+}
